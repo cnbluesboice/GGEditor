@@ -59,6 +59,7 @@ const dragAddNodeBehavior: DragAddNodeBehavior = {
       attrs: {
         x,
         y,
+        img: "http://192.168.100.43:2888/attachments/gxq_icon/imsi.svg",
         width,
         height,
         fill: '#f3f9ff',
