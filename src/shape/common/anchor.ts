@@ -54,29 +54,29 @@ function drawAnchorPoints(
   const anchorPointsState = item.get('anchorPointsState') || [];
 
   anchorPoints.forEach((anchorPoint, index) => {
-    if (anchorPointsState[index] === AnchorPointState.Enabled) {
-      group.addShape('circle', {
-        name: ANCHOR_POINT_NAME,
-        attrs: {
-          ...getAnchorPointDefaultStyle(item, anchorPoint),
-          ...getAnchorPointStyle(item, anchorPoint),
-        },
-        isAnchorPoint: true,
-        anchorPointIndex: index,
-        anchorPointState: AnchorPointState.Enabled,
-      });
-    } else {
-      group.addShape('image', {
-        name: ANCHOR_POINT_NAME,
-        attrs: {
-          ...getAnchorPointDefaultDisabledStyle(item, anchorPoint),
-          ...getAnchorPointDisabledStyle(item, anchorPoint),
-        },
-        isAnchorPoint: true,
-        anchorPointIndex: index,
-        anchorPointState: AnchorPointState.Disabled,
-      });
-    }
+    // if (anchorPointsState[index] === AnchorPointState.Enabled) {
+    group.addShape('circle', {
+      name: ANCHOR_POINT_NAME,
+      attrs: {
+        ...getAnchorPointDefaultStyle(item, anchorPoint),
+        ...getAnchorPointStyle(item, anchorPoint),
+      },
+      isAnchorPoint: true,
+      anchorPointIndex: index,
+      anchorPointState: AnchorPointState.Enabled,
+    });
+    // } else {
+    group.addShape('image', {
+      name: ANCHOR_POINT_NAME,
+      attrs: {
+        ...getAnchorPointDefaultDisabledStyle(item, anchorPoint),
+        ...getAnchorPointDisabledStyle(item, anchorPoint),
+      },
+      isAnchorPoint: true,
+      anchorPointIndex: index,
+      anchorPointState: AnchorPointState.Disabled,
+    });
+    // }
   });
 }
 
