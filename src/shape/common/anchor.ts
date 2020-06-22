@@ -17,7 +17,7 @@ const getAnchorPointDefaultStyle: GetAnchorPointStyle = (item, anchorPoint) => {
 
   return {
     img:
-      'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xLjUxNSAxLjE3Mmw1LjY1NyA1LjY1Nm0wLTUuNjU2TDEuNTE1IDYuODI4IiBzdHJva2U9IiNGRjYwNjAiIHN0cm9rZS13aWR0aD0iMS42IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PC9zdmc+',
+      'http://192.168.100.43:2888/attachments/gxq_icon/imsi.svg',
     x: width * x,
     y: height * y - 3,
     r: 3,
@@ -34,7 +34,7 @@ const getAnchorPointDefaultDisabledStyle: GetAnchorPointDisabledStyle = (item, a
 
   return {
     img:
-      'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xLjUxNSAxLjE3Mmw1LjY1NyA1LjY1Nm0wLTUuNjU2TDEuNTE1IDYuODI4IiBzdHJva2U9IiNGRjYwNjAiIHN0cm9rZS13aWR0aD0iMS42IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PC9zdmc+',
+      'http://192.168.100.43:2888/attachments/gxq_icon/imsi.svg',
     x: width * x - 4,
     y: height * y - 8,
     width: 8,
