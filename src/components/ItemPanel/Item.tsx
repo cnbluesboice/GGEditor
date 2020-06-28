@@ -28,11 +28,19 @@ class Item extends React.Component<ItemProps, ItemState> {
     }
   };
 
+  handleClick = () => {
+    const { graph, type, model } = this.props;
+    if (type === ItemType.Node) {
+      global.component.itemPanel.model = model;
+      graph.setMode(GraphMode.AddNode);
+    }
+  };
+
   render() {
     const { children } = this.props;
 
     return (
-      <div {...pick(this.props, ['style', 'className'])} onMouseDown={this.handleMouseDown}>
+      <div {...pick(this.props, ['style', 'className'])} onMouseDown={this.handleMouseDown} onClick={this.handleClick}>
         {children}
       </div>
     );
