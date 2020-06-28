@@ -37,10 +37,10 @@ class Item extends React.Component<ItemProps, ItemState> {
   };
 
   render() {
-    const { children } = this.props;
+    const { children, ...restProps } = this.props;
 
     return (
-      <div {...pick(this.props, ['style', 'className'])} onMouseDown={this.handleMouseDown} onClick={this.handleClick}>
+      <div {...pick(this.props, ['style', 'className'])} onMouseDown={this.handleMouseDown} {...restProps}>
         {children}
       </div>
     );
